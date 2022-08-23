@@ -1,3 +1,40 @@
-toFixed: es un metodo que permite limitar los numeros decimales largos a cortos, pasandole la cantidad de decimales que necesitas
+//toFixed: es un metodo que permite limitar los numeros decimales largos a cortos, pasandole la cantidad de decimales que necesitas
 
-.find: es un metodo que permite devolver al elemento que cumple con las condiciones 
+//.find: es un metodo que permite devolver al elemento que cumple con las condiciones 
+
+//setInterval(()=> cosole.log(), 1234): permite enviar otra funcion como argumento y un segundo argumento de tiempo. Nos ayuda a imprimir una funcion o algun bloque de codigo cada sierto tiempo.Se ejecuta siempre pasado el intervalo de tiempo y se detiene con clearInterval, solo si  se guardo en una const el setInterval.
+//setTimeout(): es similar al setInterval, pero este solo se ejecuta una sola ves
+
+//date.now() //esta funcion como el Array con A mayuscula, nos permite imprimir la hora en la que estamos(hora actual) en formato de milisegundos 
+
+//!: se puede usar para decir si no tiene algun valor eje: (!timestart)
+
+//localStorage //significa almacenamiento local en nuestro navegador, se puede guardar variables o informacion,etc. y estos datos no se van a borrar al recargar los datos.
+//localStorage.getItem: es para leer alguna informacion que tengamos dentro de localstorage
+//localStorage.setItem: es para agregar o guardar la informacion o variable por primera vez. 1 argumento va a ser la variable y el segundo el valor setItem('variable', 'valor');
+//localStorage.remove: elimina la informacion guardada
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* maps.push(`
+  I-X---X---
+  X-X-X-X-X-
+  X-X-X-X-X-
+  X-X-X-X-X-
+  X-X-X-X-X-
+  X-X-X-X-X-
+  X-X-X-X-X-
+  X-X-X-X-X-
+  X-X-X-X-X-
+  X---X---XO
+`); */
