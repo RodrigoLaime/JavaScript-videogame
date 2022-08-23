@@ -56,11 +56,12 @@ function startGame() {
       const posY = elementsSize * (rowI + 0.8); //renderisamo la posicion o cordenada de la fila
 
       if (col == "O") {
-        if (playerPosition.x && playerPosition.y) {
+        if (!playerPosition.x && !playerPosition.y) { //si ninguno de estos elementos tiene algo por dentro
+          playerPosition.x = posX;
+          playerPosition.y = posY;
+          console.log({ playerPosition }); 
         }
-        /* playerPosition.x = posX;
-        playerPosition.y = posY;
-        console.log({ playerPosition }); */
+  
       }
       game.fillText(emoji, posX, posY);
       console.log({ row, rowI, col, colI });
@@ -93,20 +94,45 @@ function moveByKeys(event) {
   }
 } //resumimos el codigo eliminando los corchetes de la condicion if
 
+
+
 function moveUp() {
   console.log("Me quiero mover hacia arriba");
-  playerPosition.y -= elementsSize;
-  startGame();
+  if ((playerPosition.y - elementsSize) < 0){
+    console.log('OUT');
+  } else {
+    playerPosition.y -= elementsSize;
+    startGame();
+  }
+  
 }
 
 function moveLeft() {
   console.log("Me quiero mover hacia izquierda");
+  if ((playerPosition.x - elementsSize) < elementsSize){
+    console.log('OUT');
+  } else {
+    playerPosition.x -= elementsSize;
+    startGame();
+  }
 }
 
 function moveRight() {
   console.log("Me quiero mover hacia derecha");
+  if ((playerPosition.x + elementsSize) > canvasSize){
+    console.log('OUT');
+  } else {
+  playerPosition.x += elementsSize;
+  startGame();
+  }
 }
 
 function moveDown() {
   console.log("Me quiero mover hacia abajo");
+  if ((playerPosition.y + elementsSize) > canvasSize){
+    console.log('OUT');
+  } else {
+    playerPosition.y += elementsSize;
+  startGame();
+  } 
 }

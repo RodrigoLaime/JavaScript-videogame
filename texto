@@ -1,0 +1,3 @@
+toFixed: es un metodo que permite limitar los numeros decimales largos a cortos, pasandole la cantidad de decimales que necesitas
+
+.find: es un metodo que permite devolver al elemento que cumple con las condiciones 
